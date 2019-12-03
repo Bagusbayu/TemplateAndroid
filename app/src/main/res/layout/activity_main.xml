@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/regPageLogo"
+        android:layout_width="169dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/login_logo_desc"
+        android:scrollbarTrackVertical="@mipmap/ic_launcher_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/regPageLogo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"/>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp"
+        android:layout_marginTop="25dp"
+        >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="@color/colorwhite"
+            android:text="Create Class"
+            android:textColor="@color/colorButton"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="212dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="@color/colorButton"
+            android:text="Manage Class"
+            android:textColor="@color/colorwhite" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="25dp">
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="@color/colorButton"
+            android:text="Join Class"
+            android:textColor="@color/whiteTransparentHalf"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="212dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="@color/colorwhite"
+            android:text="List Class"
+            android:textColor="@color/colorButton"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="287dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/action_logout_text"
+        android:textColor="@color/colorwhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
